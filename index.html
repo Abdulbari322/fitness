@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Securely Us — Marriage & Trauma Healing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">Securely Us</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li class="has-dropdown">
+        <a href="#services" class="dropdown-trigger">Services <span class="dropdown-arrow">↓</span></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-grid">
+            <a href="services/trauma-recovery.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Trauma Recovery</strong>
+                <span>EMDR &amp; somatic healing</span>
+              </span>
+            </a>
+            <a href="services/grief-loss.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Grief &amp; Loss</strong>
+                <span>Compassionate bereavement support</span>
+              </span>
+            </a>
+            <a href="services/breakup-divorce.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Breakup &amp; Divorce</strong>
+                <span>Rebuilding identity &amp; hope</span>
+              </span>
+            </a>
+            <a href="services/individual-therapy.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Individual Therapy</strong>
+                <span>Deep one-on-one work</span>
+              </span>
+            </a>
+            <a href="services/healing-circles.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Healing Circles</strong>
+                <span>Facilitated group sessions</span>
+              </span>
+            </a>
+            <a href="services/online-counselling.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body">
+                <strong>Online Counselling</strong>
+                <span>Secure sessions worldwide</span>
+              </span>
+            </a>
+          </div>
+          <a href="#services" class="dropdown-footer-link">View all services ↓</a>
+        </div>
+      </li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#contact" class="nav-cta">Begin Healing</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li class="mobile-services-group">
+        <span class="mobile-services-label">Services</span>
+        <ul class="mobile-services-list">
+          <li><a href="services/trauma-recovery.html" class="mobile-link mobile-sub-link">Trauma Recovery</a></li>
+          <li><a href="services/grief-loss.html" class="mobile-link mobile-sub-link">Grief &amp; Loss</a></li>
+          <li><a href="services/breakup-divorce.html" class="mobile-link mobile-sub-link">Breakup &amp; Divorce</a></li>
+          <li><a href="services/individual-therapy.html" class="mobile-link mobile-sub-link">Individual Therapy</a></li>
+          <li><a href="services/healing-circles.html" class="mobile-link mobile-sub-link">Healing Circles</a></li>
+          <li><a href="services/online-counselling.html" class="mobile-link mobile-sub-link">Online Counselling</a></li>
+        </ul>
+      </li>
+      <li><a href="#approach" class="mobile-link">Approach</a></li>
+      <li><a href="#testimonials" class="mobile-link">Stories</a></li>
+      <li><a href="#contact" class="mobile-link">Begin Healing</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <svg class="hero-botanical" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g opacity="0.12" fill="none" stroke="currentColor" stroke-width="0.8">
+          <path d="M400,100 C420,150 460,200 400,280 C340,360 320,400 400,480" />
+          <path d="M400,100 C370,160 310,210 320,290 C330,370 380,410 400,480" />
+          <path d="M400,480 C380,520 350,560 360,610 C370,660 400,700 400,700" />
+          <ellipse cx="340" cy="200" rx="60" ry="30" transform="rotate(-30 340 200)" />
+          <ellipse cx="460" cy="230" rx="55" ry="25" transform="rotate(25 460 230)" />
+          <ellipse cx="310" cy="330" rx="65" ry="28" transform="rotate(-20 310 330)" />
+          <ellipse cx="480" cy="360" rx="58" ry="26" transform="rotate(35 480 360)" />
+          <ellipse cx="330" cy="450" rx="52" ry="22" transform="rotate(-15 330 450)" />
+          <ellipse cx="460" cy="470" rx="50" ry="24" transform="rotate(20 460 470)" />
+          <path d="M340,200 C300,170 260,180 240,210" />
+          <path d="M460,230 C510,200 550,215 560,250" />
+          <path d="M310,330 C265,310 230,325 215,360" />
+          <path d="M480,360 C535,340 570,358 575,395" />
+          <path d="M330,450 C285,438 255,455 248,490" />
+          <path d="M460,470 C510,455 540,475 542,512" />
+          <circle cx="400" cy="100" r="8" />
+          <circle cx="400" cy="700" r="6" />
+          <circle cx="240" cy="210" r="4" />
+          <circle cx="560" cy="250" r="4" />
+          <circle cx="215" cy="360" r="4" />
+          <circle cx="575" cy="395" r="4" />
+          <circle cx="248" cy="490" r="4" />
+          <circle cx="542" cy="512" r="4" />
+        </g>
+      </svg>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>Marriage &amp; Trauma Specialist</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-headline reveal-up">
+        You deserve a life<br/>
+        <em>beyond the pain</em><br/>
+        you've survived.
+      </h1>
+      <p class="hero-subline reveal-up">
+        Compassionate, evidence-based counselling for women rebuilding after abuse, grief, loss, and heartbreak — in a space that holds you with care.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#contact" class="btn-primary">Book a Free Consultation</a>
+        <a href="#about" class="btn-ghost">Learn More <span class="arrow">↓</span></a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <div class="hero-stat-strip reveal-up">
+      <div class="stat">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">Women Supported</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Years of Practice</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">97%</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-image-wrap">
+        <div class="about-image-frame">
+          <div class="about-image-placeholder">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop&crop=face&q=85"
+              alt="Rebecca Islam — Marriage & Trauma Specialist"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-quote-card">
+          <p>"Healing is not a destination — it is the gentle act of returning to yourself."</p>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <div class="section-label reveal-left">About the Specialist</div>
+        <h2 class="about-headline reveal-left">
+          Rebecca Islam,<br/>
+          <em>LPC, LMFT</em>
+        </h2>
+        <div class="about-bio reveal-left">
+          <p>With over a decade working at the intersection of relational trauma and emotional recovery, I specialize in helping women reclaim their identity, voice, and sense of safety — after abuse, loss, or the quiet devastation of a broken heart.</p>
+          <p>My practice is built on one conviction: <strong>you are not broken.</strong> You are a person who has endured extraordinary pain, and you deserve extraordinary care in return.</p>
+        </div>
+        <div class="about-credentials reveal-left">
+          <div class="credential">
+            <span class="cred-icon">✦</span>
+            <span>Licensed Professional Counsellor (LPC)</span>
+          </div>
+          <div class="credential">
+            <span class="cred-icon">✦</span>
+            <span>Licensed Marriage &amp; Family Therapist (LMFT)</span>
+          </div>
+          <div class="credential">
+            <span class="cred-icon">✦</span>
+            <span>Certified EMDR Trauma Specialist</span>
+          </div>
+          <div class="credential">
+            <span class="cred-icon">✦</span>
+            <span>Gottman Method Couples Therapist (Level 3)</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary reveal-left">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">What I Offer</div>
+        <h2 class="section-headline reveal-up">
+          Tailored paths<br/><em>toward wholeness</em>
+        </h2>
+        <p class="section-subline reveal-up">Every wound is unique. Every healing journey is your own. My services meet you exactly where you are.</p>
+      </div>
+
+      <div class="services-grid">
+        <a href="services/trauma-recovery.html" class="service-card reveal-up" data-delay="0" aria-label="Explore Trauma Recovery">
+          <div class="service-number">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6C13.37 6 8 11.37 8 18C8 22.1 9.96 25.73 13 28.08V34L20 31L27 34V28.08C30.04 25.73 32 22.1 32 18C32 11.37 26.63 6 20 6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M15 18C15 18 16.5 21 20 21C23.5 21 25 18 25 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Trauma Recovery</h3>
+          <p>Evidence-based EMDR and somatic therapy to safely process and integrate experiences of abuse, violence, or relational trauma.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+
+        <a href="services/grief-loss.html" class="service-card reveal-up" data-delay="100" aria-label="Explore Grief and Loss Counselling">
+          <div class="service-number">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 8C20 8 10 14 10 22C10 27.52 14.48 32 20 32C25.52 32 30 27.52 30 22C30 14 20 8 20 8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M20 32V36M16 36H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 22C14 18.69 16.69 16 20 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Grief &amp; Loss Counselling</h3>
+          <p>A compassionate space to mourn what was lost — a person, a relationship, a version of yourself — and find meaning in what remains.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+
+        <a href="services/breakup-divorce.html" class="service-card reveal-up" data-delay="200" aria-label="Explore Breakup and Divorce Recovery">
+          <div class="service-number">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 20C12 20 14 12 20 12C26 12 28 20 28 20C28 20 26 28 20 28C14 28 12 20 12 20Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 8V10M20 30V32M8 20H10M30 20H32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Breakup &amp; Divorce Recovery</h3>
+          <p>Rebuilding self-worth, identity, and hope after the end of a significant relationship — with structured support and clear milestones.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+
+        <a href="services/individual-therapy.html" class="service-card reveal-up" data-delay="0" aria-label="Explore Individual Therapy">
+          <div class="service-number">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="10" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="14" width="10" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 18H22M18 22H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M13 14V10C13 8.9 13.9 8 15 8H25C26.1 8 27 8.9 27 10V14" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Individual Therapy</h3>
+          <p>Deep, one-on-one work to understand your patterns, boundaries, and needs — and build a life that reflects who you truly are.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+
+        <a href="services/healing-circles.html" class="service-card reveal-up" data-delay="100" aria-label="Explore Healing Circles">
+          <div class="service-number">05</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="26" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M6 34C6 29.58 9.58 26 14 26C18.42 26 22 29.58 22 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 26C30.42 26 34 29.58 34 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Healing Circles (Group)</h3>
+          <p>Small, facilitated group sessions with women on similar journeys. Shared experience creates a unique and powerful form of healing.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+
+        <a href="services/online-counselling.html" class="service-card reveal-up" data-delay="200" aria-label="Explore Online Counselling">
+          <div class="service-number">06</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="24" height="26" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 16H26M14 22H22M14 28H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Online Counselling</h3>
+          <p>Secure, private video sessions from the comfort of your own safe space — because healing shouldn't require leaving home.</p>
+          <span class="service-link">Explore <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach / Philosophy Section -->
+  <section class="approach" id="approach">
+    <div class="approach-inner">
+      <div class="approach-left">
+        <div class="section-label reveal-left">The Method</div>
+        <h2 class="approach-headline reveal-left">
+          A framework built<br/>on <em>safety first.</em>
+        </h2>
+        <p class="approach-intro reveal-left">
+          My approach is integrative — drawing from the most effective, trauma-informed modalities available, woven together by genuine human care.
+        </p>
+        <div class="approach-steps">
+          <div class="approach-step reveal-left" data-delay="0">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Safety &amp; Stabilisation</h4>
+              <p>Before we process anything, we build the internal and external resources that make healing possible without retraumatisation.</p>
+            </div>
+          </div>
+          <div class="approach-step reveal-left" data-delay="100">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Processing &amp; Integration</h4>
+              <p>Using EMDR, narrative therapy, and somatic approaches to gently revisit and reprocess what happened at a pace you control.</p>
+            </div>
+          </div>
+          <div class="approach-step reveal-left" data-delay="200">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Reconnection &amp; Growth</h4>
+              <p>Rebuilding your relationship with yourself, developing new patterns, and stepping into a future that belongs entirely to you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="approach-right">
+        <div class="modality-cloud reveal-right">
+          <div class="modality-card mc-1">
+            <span class="mc-label">EMDR</span>
+            <span class="mc-desc">Eye Movement Desensitisation &amp; Reprocessing</span>
+          </div>
+          <div class="modality-card mc-2">
+            <span class="mc-label">Somatic Therapy</span>
+            <span class="mc-desc">Body-based trauma release</span>
+          </div>
+          <div class="modality-card mc-3">
+            <span class="mc-label">Gottman Method</span>
+            <span class="mc-desc">Research-based relationship science</span>
+          </div>
+          <div class="modality-card mc-4">
+            <span class="mc-label">Narrative Therapy</span>
+            <span class="mc-desc">Rewriting your story on your terms</span>
+          </div>
+          <div class="modality-card mc-5">
+            <span class="mc-label">CBT</span>
+            <span class="mc-desc">Cognitive restructuring &amp; behaviour change</span>
+          </div>
+          <div class="modality-card mc-6">
+            <span class="mc-label">Mindfulness</span>
+            <span class="mc-desc">Present-moment grounding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-label reveal-up">Client Stories</div>
+      <h2 class="section-headline reveal-up">Words from women<br/><em>who walked this path</em></h2>
+
+      <div class="testimonials-track-wrap">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="tcard-quote">❝</div>
+            <p>"I came in barely able to speak about what happened to me. Two years later, I have a voice, boundaries, and a life I'm genuinely proud of. Dr. Wells didn't just help me survive — she helped me live."</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #c4a882, #8a6f5e)"></div>
+              <div>
+                <strong>Mara K.</strong>
+                <span>Domestic Abuse Survivor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-quote">❝</div>
+            <p>"After my divorce I felt like a ghost in my own life. The grief work we did together was the first time anyone helped me mourn what I'd actually lost — not just the marriage, but the future I thought I'd have."</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #8a6f5e, #5d4a3e)"></div>
+              <div>
+                <strong>Priya S.</strong>
+                <span>Divorce &amp; Loss</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-quote">❝</div>
+            <p>"I was sceptical of online therapy but the sessions with Dr. Wells were the most present and safe I've ever felt in a therapeutic relationship. She has a rare gift for holding space without judgement."</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #7a8c6e, #4a5e42)"></div>
+              <div>
+                <strong>Nneka A.</strong>
+                <span>Trauma Recovery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-quote">❝</div>
+            <p>"The Healing Circle changed everything. Finding other women who truly understood my experience — without explanation, without shame — was something I didn't know I needed until I had it."</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #c9a96e, #9a7040)"></div>
+              <div>
+                <strong>Sarah O.</strong>
+                <span>Group Healing Circle</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tcard-quote">❝</div>
+            <p>"I thought I would never trust again. Dr. Wells patiently helped me understand that the issue was never my capacity to trust — it was learning who is worthy of it. That reframe changed my entire life."</p>
+            <div class="tcard-author">
+              <div class="tcard-avatar" style="background: linear-gradient(135deg, #b0847c, #7a4a44)"></div>
+              <div>
+                <strong>Amara L.</strong>
+                <span>Relationship Trauma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-nav">
+        <button class="tnav-btn" id="tnavPrev" aria-label="Previous">←</button>
+        <div class="tnav-dots" id="tnavDots"></div>
+        <button class="tav-btn tav-next" id="tnavNext" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <div class="section-label reveal-up">Common Questions</div>
+      <h2 class="section-headline reveal-up">You may be<br/><em>wondering…</em></h2>
+      <div class="faq-list">
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I know if I'm ready for therapy?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>There is no "ready." If part of you is curious about healing — even while the rest of you is scared — that's enough. Our first session is a gentle conversation, not a commitment. You set the pace entirely.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>What's the difference between trauma therapy and regular therapy?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trauma therapy uses specialised modalities (like EMDR) that work with the nervous system, not just the mind. This allows us to process experiences that talk therapy alone often cannot reach — memories stored in the body, not just the intellect.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is online therapy as effective as in-person?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Research consistently shows that online therapy is equally effective for most concerns, including trauma. Many clients find it easier to open up from their own safe space, and the flexibility removes barriers to consistent attendance — which is key to progress.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>How long will therapy take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Healing doesn't have a fixed timeline and I won't pretend it does. Some clients feel significant shifts in 8–12 weeks. Others work with me for a year or more. We regularly review your progress together, and you always decide when you've reached what you came for.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is everything I share completely confidential?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All sessions are strictly confidential, protected by professional ethical codes and applicable law. The only exceptions are the narrow legal requirements around imminent risk of harm — which I will always explain clearly at the outset.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-inner reveal-up">
+      <div class="cta-banner-leaf">
+        <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M60,10 C60,10 20,60 20,110 C20,160 40,190 60,190 C80,190 100,160 100,110 C100,60 60,10 60,10Z" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+          <path d="M60,10 L60,190" stroke="currentColor" stroke-width="0.8" opacity="0.3"/>
+          <path d="M35,80 C50,70 70,70 85,80" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
+          <path d="M30,110 C45,98 75,98 90,110" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
+          <path d="M35,140 C50,130 70,130 85,140" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
+        </svg>
+      </div>
+      <span class="cta-eyebrow">Take the First Step</span>
+      <h2>Your healing<br/><em>begins with one conversation.</em></h2>
+      <p>A complimentary 20-minute consultation — no commitment, no pressure. Just a conversation about where you are and where you'd like to go.</p>
+      <a href="#contact" class="btn-primary btn-light">Book Your Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="section-label reveal-left">Get in Touch</div>
+        <h2 class="reveal-left">Let's begin<br/><em>your story.</em></h2>
+        <p class="reveal-left">Whether you have questions or you're ready to book — reach out. Every message is read personally, and I respond within 24 hours.</p>
+
+        <div class="contact-details reveal-left">
+          <div class="contact-detail">
+            <span class="cd-icon">◉</span>
+            <div>
+              <strong>Email</strong>
+              <span>hello@securelyus.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">◉</span>
+            <div>
+              <strong>Phone</strong>
+              <span>+1 (555) 012-3456</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">◉</span>
+            <div>
+              <strong>Online Sessions</strong>
+              <span>Available Worldwide (English)</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">◉</span>
+            <div>
+              <strong>In-Person</strong>
+              <span>New York City, USA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-availability reveal-left">
+          <div class="avail-row">
+            <span>Monday – Thursday</span>
+            <span>9:00 AM – 7:00 PM</span>
+          </div>
+          <div class="avail-row">
+            <span>Friday</span>
+            <span>9:00 AM – 4:00 PM</span>
+          </div>
+          <div class="avail-row">
+            <span>Saturday</span>
+            <span>By arrangement</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">I'm interested in</label>
+            <div class="select-wrap">
+              <select id="service" name="service">
+                <option value="">Select a service…</option>
+                <option>Trauma Recovery</option>
+                <option>Grief &amp; Loss Counselling</option>
+                <option>Breakup &amp; Divorce Recovery</option>
+                <option>Individual Therapy</option>
+                <option>Healing Circles (Group)</option>
+                <option>Online Counselling</option>
+                <option>Free Consultation</option>
+              </select>
+              <span class="select-arrow">↓</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Share as little or as much as you'd like…"></textarea>
+          </div>
+          <div class="form-privacy">
+            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1L2 4V8C2 11.31 4.55 14.41 8 15C11.45 14.41 14 11.31 14 8V4L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span>Your privacy is sacred. All information is strictly confidential.</span>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message →</button>
+          <div class="form-success" id="formSuccess">
+            <span>✦</span>
+            <p>Thank you for reaching out. I'll be in touch within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">◈</span>
+            <span>Securely Us</span>
+          </div>
+          <p class="footer-tagline">A safe space for healing, growth,<br/>and rediscovering yourself.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 10v7M7 7v.01M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M11 10v7"/></svg>
+            </a>
+            <a href="#" aria-label="Psychology Today">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Trauma Recovery</a></li>
+            <li><a href="#services">Grief &amp; Loss</a></li>
+            <li><a href="#services">Divorce Recovery</a></li>
+            <li><a href="#services">Individual Therapy</a></li>
+            <li><a href="#services">Healing Circles</a></li>
+            <li><a href="#services">Online Sessions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#about">About Dr. Wells</a></li>
+            <li><a href="#approach">The Approach</a></li>
+            <li><a href="#testimonials">Client Stories</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Book a Session</a></li>
+            <li><a href="#">Crisis Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Securely Us. All rights reserved. Dr. Amara Wells, LPC, LMFT. License #NY-00000.</p>
+        <p class="footer-crisis">If you are in crisis, please call <strong>988</strong> (Suicide &amp; Crisis Lifeline) or text <strong>HOME</strong> to 741741.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

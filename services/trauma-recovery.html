@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trauma Recovery — Securely Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">Securely Us</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li class="has-dropdown">
+        <a href="../index.html#services" class="dropdown-trigger">Services <span class="dropdown-arrow">↓</span></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-grid">
+            <a href="trauma-recovery.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Trauma Recovery</strong><span>EMDR &amp; somatic healing</span></span>
+            </a>
+            <a href="grief-loss.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Grief &amp; Loss</strong><span>Compassionate bereavement support</span></span>
+            </a>
+            <a href="breakup-divorce.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Breakup &amp; Divorce</strong><span>Rebuilding identity &amp; hope</span></span>
+            </a>
+            <a href="individual-therapy.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Individual Therapy</strong><span>Deep one-on-one work</span></span>
+            </a>
+            <a href="healing-circles.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Healing Circles</strong><span>Facilitated group sessions</span></span>
+            </a>
+            <a href="online-counselling.html" class="dropdown-item">
+              <span class="di-icon">◈</span>
+              <span class="di-body"><strong>Online Counselling</strong><span>Secure sessions worldwide</span></span>
+            </a>
+          </div>
+          <a href="../index.html#services" class="dropdown-footer-link">View all services ↓</a>
+        </div>
+      </li>
+      <li><a href="../index.html#approach">Approach</a></li>
+      <li><a href="../index.html#testimonials">Stories</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Begin Healing</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#about" class="mobile-link">About</a></li>
+      <li class="mobile-services-group">
+        <span class="mobile-services-label">Services</span>
+        <ul class="mobile-services-list">
+          <li><a href="trauma-recovery.html" class="mobile-link mobile-sub-link">Trauma Recovery</a></li>
+          <li><a href="grief-loss.html" class="mobile-link mobile-sub-link">Grief &amp; Loss</a></li>
+          <li><a href="breakup-divorce.html" class="mobile-link mobile-sub-link">Breakup &amp; Divorce</a></li>
+          <li><a href="individual-therapy.html" class="mobile-link mobile-sub-link">Individual Therapy</a></li>
+          <li><a href="healing-circles.html" class="mobile-link mobile-sub-link">Healing Circles</a></li>
+          <li><a href="online-counselling.html" class="mobile-link mobile-sub-link">Online Counselling</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#approach" class="mobile-link">Approach</a></li>
+      <li><a href="../index.html#testimonials" class="mobile-link">Stories</a></li>
+      <li><a href="../index.html#contact" class="mobile-link">Begin Healing</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="service-hero">
+    <div class="service-hero-bg">
+      <div class="service-hero-gradient"></div>
+      <div class="service-hero-shape"></div>
+    </div>
+    <div class="service-hero-number">01</div>
+    <div class="service-hero-content reveal-up">
+      <div class="service-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#services">Services</a>
+        <span>/</span>
+        <span style="color: var(--ink)">Trauma Recovery</span>
+      </div>
+      <div class="service-hero-tag">Evidence-Based Trauma Therapy</div>
+      <h1>You survived.<br/><em>Now it's time to live.</em></h1>
+      <p class="service-hero-subline">Specialised trauma therapy that works with your nervous system — not against it — to help you safely process and integrate what happened, at a pace you control entirely.</p>
+      <div class="service-hero-actions">
+        <a href="../index.html#contact" class="btn-primary">Book a Free Consultation</a>
+        <a href="#overview" class="btn-ghost">Learn More ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="svc-overview" id="overview">
+    <div class="svc-overview-inner">
+      <div class="svc-overview-text reveal-left">
+        <div class="section-label">What Is Trauma Recovery Therapy?</div>
+        <h2>Healing that goes<br/><em>deeper than talk.</em></h2>
+        <p>Trauma isn't just something that happened to you — it's something your body is still carrying. Conventional talk therapy often can't reach the places where trauma lives: in your nervous system, in your physical responses, in the split-second reactions you don't choose.</p>
+        <p>Trauma Recovery Therapy uses <strong>EMDR (Eye Movement Desensitisation and Reprocessing)</strong>, somatic techniques, and trauma-focused CBT to access and reprocess traumatic memories at the neurological level — gently transforming the way your brain stores and responds to what you've been through.</p>
+        <p>The goal is not to forget, or to minimise what happened. It's to help those experiences become something you carry <strong>without being defined or controlled by them</strong>. You remain the author of your story.</p>
+      </div>
+      <div class="svc-info-card reveal-right">
+        <h4>At a Glance</h4>
+        <div class="svc-info-row">
+          <span class="svc-info-label">Session Length</span>
+          <span class="svc-info-value">60 – 90 minutes</span>
+        </div>
+        <div class="svc-info-row">
+          <span class="svc-info-label">Frequency</span>
+          <span class="svc-info-value">Weekly (recommended)</span>
+        </div>
+        <div class="svc-info-row">
+          <span class="svc-info-label">Format</span>
+          <span class="svc-info-value">In-person or Online</span>
+        </div>
+        <div class="svc-info-row">
+          <span class="svc-info-label">Modalities</span>
+          <span class="svc-info-value">EMDR · Somatic · CBT</span>
+        </div>
+        <div class="svc-info-row">
+          <span class="svc-info-label">Typical Duration</span>
+          <span class="svc-info-value">12 – 36 weeks</span>
+        </div>
+        <div class="svc-info-row">
+          <span class="svc-info-label">First Step</span>
+          <span class="svc-info-value">Free 20-min consultation</span>
+        </div>
+        <div class="svc-book-btn">
+          <a href="../index.html#contact" class="btn-primary" style="width:100%; justify-content:center;">Book a Session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="svc-who">
+    <div class="svc-who-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Who This Is For</div>
+        <h2 class="section-headline reveal-up">You may be ready for<br/><em>trauma therapy if…</em></h2>
+      </div>
+      <div class="svc-who-grid">
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You experienced physical, emotional, or sexual abuse — in childhood or as an adult — and it continues to shape how you feel safe (or unsafe) in the world.</p>
+        </div>
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You have flashbacks, intrusive memories, nightmares, or feel unexpectedly triggered by sounds, smells, or situations that remind you of what happened.</p>
+        </div>
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You're in a constant state of high alert — always waiting for something to go wrong — even when you're objectively safe.</p>
+        </div>
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You've been in or escaped a domestically abusive relationship and are trying to understand why you stayed, or why it still affects you so deeply.</p>
+        </div>
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You find yourself emotionally numb, disconnected from your body, or unable to feel joy or safety — even when nothing "bad" is currently happening.</p>
+        </div>
+        <div class="svc-who-card reveal-up">
+          <div class="svc-who-icon">✦</div>
+          <p>You've tried regular therapy but felt like you couldn't make real progress — or couldn't bring yourself to talk about certain things no matter how much you wanted to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="svc-process">
+    <div class="svc-process-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">The Journey</div>
+        <h2 class="section-headline reveal-up">Four phases of<br/><em>trauma healing</em></h2>
+      </div>
+      <div class="svc-process-steps">
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">1</div>
+          <h4>Safety &amp; Stabilisation</h4>
+          <p>Build internal resources and coping strategies before touching difficult memories. You'll never be pushed before you're ready.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">2</div>
+          <h4>Assessment</h4>
+          <p>Together we identify the specific memories and beliefs we'll work with — and measure where you're starting from.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">3</div>
+          <h4>Processing</h4>
+          <p>Using EMDR and somatic approaches, we gently reprocess traumatic material at the nervous system level.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">4</div>
+          <h4>Integration</h4>
+          <p>Consolidate your gains, build future resilience, and step forward with a healed relationship to your past.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pullquote -->
+  <section class="svc-pullquote">
+    <div class="svc-pullquote-inner reveal-up">
+      <blockquote>"I came in barely able to speak about what happened. EMDR with Dr. Wells was the first time my body finally felt like it believed I was safe. The memories are still there — but they no longer run my life."</blockquote>
+      <cite><span class="cite-dot"></span> Mara K. — Domestic Abuse Survivor <span class="cite-dot"></span></cite>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="svc-faq">
+    <div class="svc-faq-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Questions</div>
+        <h2 class="section-headline reveal-up">About trauma<br/><em>therapy</em></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>Will I have to relive everything in detail?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. EMDR and somatic therapy do not require you to narrate traumatic events in detail. In fact, one of the key advantages of these approaches is that they process trauma even when you can't — or don't want to — put it into words. You remain in full control of what you share and when.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>What does EMDR actually feel like?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>During EMDR you'll be guided through a memory while tracking bilateral stimulation — typically eye movements, taps, or sounds. Most people describe it as surprisingly gentle. You may feel emotional release, physical sensations, or new insights. Sessions feel different to regular therapy but most clients find it less overwhelming than they expected.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I know if EMDR or somatic therapy is right for me?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The free consultation is exactly where we answer this question together. Some people respond better to one modality than another, and sometimes we use a blend. I'll explain all options clearly before we begin anything, and nothing happens without your fully informed consent.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false">
+            <span>What if I'm currently in an unsafe situation?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Your current safety always comes first. If you're still in a dangerous situation, we'll focus entirely on safety planning, stabilisation, and connecting you with appropriate resources before any trauma processing begins. Trauma therapy requires a stable foundation — we build that together, however long it takes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="svc-related">
+    <div class="svc-related-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Also Consider</div>
+        <h2 class="section-headline reveal-up">Other ways I<br/><em>can support you</em></h2>
+      </div>
+      <div class="svc-related-grid">
+        <div class="svc-related-card reveal-up">
+          <h4>Grief &amp; Loss Counselling</h4>
+          <p>Trauma and loss often coexist. If your experience involved the death of a person or relationship, grief work may complement trauma therapy.</p>
+          <a href="grief-loss.html">Learn more →</a>
+        </div>
+        <div class="svc-related-card reveal-up">
+          <h4>Individual Therapy</h4>
+          <p>Once acute trauma is stabilised, individual therapy helps you rebuild identity, patterns, and a life that reflects who you truly are.</p>
+          <a href="individual-therapy.html">Learn more →</a>
+        </div>
+        <div class="svc-related-card reveal-up">
+          <h4>Healing Circles</h4>
+          <p>Many survivors find profound validation in shared experience. Our women's healing circles run alongside individual work.</p>
+          <a href="healing-circles.html">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="svc-cta-strip reveal-up">
+    <h2>Ready to begin your<br/><em>recovery journey?</em></h2>
+    <p>Start with a free, no-pressure 20-minute consultation. Tell me where you are — I'll tell you how I can help.</p>
+    <a href="../index.html#contact" class="btn-primary btn-light">Book Your Free Consultation</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">◈</span>
+            <span>Securely Us</span>
+          </div>
+          <p class="footer-tagline">A safe space for healing, growth,<br/>and rediscovering yourself.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 10v7M7 7v.01M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M11 10v7"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="trauma-recovery.html">Trauma Recovery</a></li>
+            <li><a href="grief-loss.html">Grief &amp; Loss</a></li>
+            <li><a href="breakup-divorce.html">Divorce Recovery</a></li>
+            <li><a href="individual-therapy.html">Individual Therapy</a></li>
+            <li><a href="healing-circles.html">Healing Circles</a></li>
+            <li><a href="online-counselling.html">Online Sessions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="../index.html#about">About Dr. Wells</a></li>
+            <li><a href="../index.html#approach">The Approach</a></li>
+            <li><a href="../index.html#testimonials">Client Stories</a></li>
+            <li><a href="../index.html#contact">Book a Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Securely Us. All rights reserved. Dr. Amara Wells, LPC, LMFT.</p>
+        <p class="footer-crisis">If you are in crisis, please call <strong>988</strong> or text <strong>HOME</strong> to 741741.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

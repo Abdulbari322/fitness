@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healing Circles — Securely Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo"><span class="logo-mark">◈</span><span class="logo-text">Securely Us</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li class="has-dropdown">
+        <a href="../index.html#services" class="dropdown-trigger">Services <span class="dropdown-arrow">↓</span></a>
+        <div class="dropdown-menu">
+          <div class="dropdown-grid">
+            <a href="trauma-recovery.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Trauma Recovery</strong><span>EMDR &amp; somatic healing</span></span></a>
+            <a href="grief-loss.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Grief &amp; Loss</strong><span>Compassionate bereavement support</span></span></a>
+            <a href="breakup-divorce.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Breakup &amp; Divorce</strong><span>Rebuilding identity &amp; hope</span></span></a>
+            <a href="individual-therapy.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Individual Therapy</strong><span>Deep one-on-one work</span></span></a>
+            <a href="healing-circles.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Healing Circles</strong><span>Facilitated group sessions</span></span></a>
+            <a href="online-counselling.html" class="dropdown-item"><span class="di-icon">◈</span><span class="di-body"><strong>Online Counselling</strong><span>Secure sessions worldwide</span></span></a>
+          </div>
+          <a href="../index.html#services" class="dropdown-footer-link">View all services ↓</a>
+        </div>
+      </li>
+      <li><a href="../index.html#approach">Approach</a></li>
+      <li><a href="../index.html#testimonials">Stories</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Begin Healing</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#about" class="mobile-link">About</a></li>
+      <li class="mobile-services-group">
+        <span class="mobile-services-label">Services</span>
+        <ul class="mobile-services-list">
+          <li><a href="trauma-recovery.html" class="mobile-link mobile-sub-link">Trauma Recovery</a></li>
+          <li><a href="grief-loss.html" class="mobile-link mobile-sub-link">Grief &amp; Loss</a></li>
+          <li><a href="breakup-divorce.html" class="mobile-link mobile-sub-link">Breakup &amp; Divorce</a></li>
+          <li><a href="individual-therapy.html" class="mobile-link mobile-sub-link">Individual Therapy</a></li>
+          <li><a href="healing-circles.html" class="mobile-link mobile-sub-link">Healing Circles</a></li>
+          <li><a href="online-counselling.html" class="mobile-link mobile-sub-link">Online Counselling</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#approach" class="mobile-link">Approach</a></li>
+      <li><a href="../index.html#testimonials" class="mobile-link">Stories</a></li>
+      <li><a href="../index.html#contact" class="mobile-link">Begin Healing</a></li>
+    </ul>
+  </div>
+
+  <section class="service-hero">
+    <div class="service-hero-bg">
+      <div class="service-hero-gradient" style="background: radial-gradient(ellipse 70% 70% at 10% 60%, rgba(74,103,65,0.22) 0%, transparent 60%), radial-gradient(ellipse 50% 80% at 90% 20%, rgba(197,168,130,0.2) 0%, transparent 55%), linear-gradient(160deg, #f6f1e9 0%, #ede5d4 100%);"></div>
+      <div class="service-hero-shape"></div>
+    </div>
+    <div class="service-hero-number">05</div>
+    <div class="service-hero-content reveal-up">
+      <div class="service-breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="../index.html#services">Services</a><span>/</span>
+        <span style="color:var(--ink)">Healing Circles</span>
+      </div>
+      <div class="service-hero-tag">Facilitated Women's Group Therapy</div>
+      <h1>Healing is stronger<br/><em>in community.</em></h1>
+      <p class="service-hero-subline">Small, professionally facilitated group sessions for women navigating similar journeys — because being truly witnessed by others who understand is a form of healing that individual therapy alone cannot replicate.</p>
+      <div class="service-hero-actions">
+        <a href="../index.html#contact" class="btn-primary">Join the Waitlist</a>
+        <a href="#overview" class="btn-ghost">Learn More ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-overview" id="overview">
+    <div class="svc-overview-inner">
+      <div class="svc-overview-text reveal-left">
+        <div class="section-label">What Are Healing Circles?</div>
+        <h2>The power of being<br/><em>truly understood.</em></h2>
+        <p>There is something that happens when a woman shares her experience with others who truly understand it — not because they've read about it, but because they've lived it. Shame dissolves. Isolation lifts. The sense that something is uniquely, privately wrong with you gives way to recognition: <em>I am not alone in this.</em></p>
+        <p>Healing Circles are <strong>small-group therapy sessions (6–8 participants)</strong>, professionally facilitated by Dr. Wells, structured around a specific theme: recovery from abuse, navigating grief, rebuilding after divorce, or healing from relationship trauma.</p>
+        <p>Group therapy is not a lesser version of individual therapy — it is a <strong>different and complementary form of healing</strong> with unique benefits that one-on-one work cannot offer. Many clients attend both.</p>
+      </div>
+      <div class="svc-info-card reveal-right">
+        <h4>Circle Details</h4>
+        <div class="svc-info-row"><span class="svc-info-label">Session Length</span><span class="svc-info-value">90 minutes</span></div>
+        <div class="svc-info-row"><span class="svc-info-label">Frequency</span><span class="svc-info-value">Weekly (10-week cohorts)</span></div>
+        <div class="svc-info-row"><span class="svc-info-label">Group Size</span><span class="svc-info-value">6 – 8 women</span></div>
+        <div class="svc-info-row"><span class="svc-info-label">Format</span><span class="svc-info-value">In-person or Online cohort</span></div>
+        <div class="svc-info-row"><span class="svc-info-label">Themes</span><span class="svc-info-value">Abuse · Grief · Divorce · Trauma</span></div>
+        <div class="svc-info-row"><span class="svc-info-label">Intake</span><span class="svc-info-value">Individual screening required</span></div>
+        <div class="svc-book-btn"><a href="../index.html#contact" class="btn-primary" style="width:100%;justify-content:center;">Join the Waitlist</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-who">
+    <div class="svc-who-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Who This Is For</div>
+        <h2 class="section-headline reveal-up">Healing Circles are for women<br/><em>who are ready to be seen.</em></h2>
+      </div>
+      <div class="svc-who-grid">
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You've been through abuse, grief, divorce, or trauma and find that individual therapy, while helpful, leaves you feeling isolated in your experience.</p></div>
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You crave the company of other women who <em>get it</em> — without explanation, without justification, without having to translate what you've been through into terms others will understand.</p></div>
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You feel a sense of shame about what happened to you and suspect that sharing it in a safe group might be more powerful than carrying it alone.</p></div>
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You want to develop your relational skills — being witnessed, witnessing others, giving and receiving support — in a structured, safe environment.</p></div>
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You're currently in or have completed individual therapy and feel ready to bring your healing into a relational context.</p></div>
+        <div class="svc-who-card reveal-up"><div class="svc-who-icon">✦</div><p>You're drawn to community, but the idea of unstructured social interaction feels overwhelming right now. Circles are structured, boundaried, and professionally held.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-process">
+    <div class="svc-process-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">How It Works</div>
+        <h2 class="section-headline reveal-up">The structure of<br/><em>a Healing Circle</em></h2>
+      </div>
+      <div class="svc-process-steps">
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">1</div>
+          <h4>Screening</h4>
+          <p>A private individual session to ensure the circle is the right fit for you at this moment in your journey.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">2</div>
+          <h4>Orientation</h4>
+          <p>The first circle session establishes trust, safety agreements, and the group's shared commitments.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">3</div>
+          <h4>10 Weekly Sessions</h4>
+          <p>Themed, structured group work — sharing, exercises, reflection, and facilitated connection.</p>
+        </div>
+        <div class="svc-process-step reveal-up">
+          <div class="svc-step-dot">4</div>
+          <h4>Closing &amp; Next Steps</h4>
+          <p>The final session honours the journey and each member's growth, with personalised recommendations for what's next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-pullquote">
+    <div class="svc-pullquote-inner reveal-up">
+      <blockquote>"The Healing Circle was the first time I heard someone say exactly what I had felt but never been able to say myself. That moment — realising I wasn't uniquely broken — changed something in me that months of individual therapy hadn't been able to reach."</blockquote>
+      <cite><span class="cite-dot"></span> Nneka A. — Healing Circle Participant <span class="cite-dot"></span></cite>
+    </div>
+  </section>
+
+  <section class="svc-faq">
+    <div class="svc-faq-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Questions</div>
+        <h2 class="section-headline reveal-up">About healing<br/><em>circles</em></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false"><span>Will I have to share personal details with strangers?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>You share only what you choose to. There is no requirement to disclose anything before you're ready. A strong culture of voluntary participation is established in the first session — you will never be put on the spot or expected to perform. Over time, as trust builds, many members find themselves sharing more than they anticipated.</p></div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false"><span>Is everything shared in the group confidential?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Yes. All participants sign a confidentiality agreement as part of intake, committing to keep everything shared in the circle within the group. Dr. Wells also maintains strict professional confidentiality. The safety of the group depends on this, and it is taken extremely seriously.</p></div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false"><span>Can I attend a Healing Circle without doing individual therapy?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>It depends on where you are in your journey. Some members attend circles only. Others do both. The screening session helps us determine what combination is right for you. If acute trauma is unprocessed, I may recommend beginning with individual trauma therapy first — so that the group experience is safe and productive rather than overwhelming.</p></div>
+        </div>
+        <div class="faq-item reveal-up">
+          <button class="faq-question" aria-expanded="false"><span>How do I join a Healing Circle?</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Circles run in 10-week cohorts with limited spaces. Join the waitlist via the contact form, and you'll be contacted when a suitable cohort is forming. The waitlist screening session is free and carries no commitment to join.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-related">
+    <div class="svc-related-inner">
+      <div class="section-header">
+        <div class="section-label reveal-up">Also Consider</div>
+        <h2 class="section-headline reveal-up">Other ways I<br/><em>can support you</em></h2>
+      </div>
+      <div class="svc-related-grid">
+        <div class="svc-related-card reveal-up"><h4>Individual Therapy</h4><p>Most circle participants also do individual work — the two modalities complement each other deeply.</p><a href="individual-therapy.html">Learn more →</a></div>
+        <div class="svc-related-card reveal-up"><h4>Trauma Recovery</h4><p>If you're carrying unprocessed trauma, individual trauma therapy may be the right first step before joining a circle.</p><a href="trauma-recovery.html">Learn more →</a></div>
+        <div class="svc-related-card reveal-up"><h4>Online Counselling</h4><p>Healing Circles are available as online cohorts for those unable to attend in person in New York City.</p><a href="online-counselling.html">Learn more →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-cta-strip reveal-up">
+    <h2>Ready to heal<br/><em>in community?</em></h2>
+    <p>Join the waitlist for our next Healing Circle cohort. Spaces are limited to 8 women per circle.</p>
+    <a href="../index.html#contact" class="btn-primary btn-light">Join the Waitlist</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-mark">◈</span><span>Securely Us</span></div>
+          <p class="footer-tagline">A safe space for healing, growth,<br/>and rediscovering yourself.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="trauma-recovery.html">Trauma Recovery</a></li>
+            <li><a href="grief-loss.html">Grief &amp; Loss</a></li>
+            <li><a href="breakup-divorce.html">Divorce Recovery</a></li>
+            <li><a href="individual-therapy.html">Individual Therapy</a></li>
+            <li><a href="healing-circles.html">Healing Circles</a></li>
+            <li><a href="online-counselling.html">Online Sessions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="../index.html#about">About Dr. Wells</a></li>
+            <li><a href="../index.html#contact">Book a Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Legal</h4>
+          <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Securely Us. All rights reserved. Dr. Amara Wells, LPC, LMFT.</p>
+        <p class="footer-crisis">If you are in crisis, please call <strong>988</strong> or text <strong>HOME</strong> to 741741.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
