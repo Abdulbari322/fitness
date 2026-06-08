@@ -149,6 +149,7 @@ em { font-family: var(--font-italic); font-style: italic; color: var(--terracott
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 .btn-primary::before {
   content: '';
@@ -158,10 +159,10 @@ em { font-family: var(--font-italic); font-style: italic; color: var(--terracott
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  z-index: 0;
+  z-index: -1;
 }
 .btn-primary:hover::before { transform: scaleX(1); transform-origin: left; }
-.btn-primary span, .btn-primary:hover { position: relative; z-index: 1; }
+.btn-primary span { position: relative; z-index: 1; }
 
 .btn-ghost {
   display: inline-flex;

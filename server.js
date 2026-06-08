@@ -2,7 +2,8 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+// Allow overriding the port, e.g. `npm start` after setting PORT=4000
+const PORT = process.env.PORT || 3000;
 const MIME = {
   '.html': 'text/html',
   '.css': 'text/css',
@@ -33,6 +34,16 @@ const server = http.createServer((req, res) => {
   });
 });
 
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`\n⚠  Port ${PORT} is already in use (another server is still running).`);
+    console.error(`   • Stop it, or start on a different port:  set PORT=4000 && npm start`);
+    console.error(`   • Windows: find it with  netstat -ano | findstr :${PORT}`);
+    process.exit(1);
+  }
+  throw err;
+});
+
 server.listen(PORT, () => {
-  console.log(`Securely Us running at http://localhost:${PORT}`);
+  console.log(`Rebecca Islam site running at http://localhost:${PORT}`);
 });
