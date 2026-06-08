@@ -213,9 +213,16 @@ em { font-family: var(--font-italic); font-style: italic; color: var(--terracott
   align-items: center;
 }
 .logo-img {
-  height: 200px;
+  height: 64px;
   width: auto;
   display: block;
+}
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  white-space: nowrap;
 }
 @keyframes rotate-slow { to { transform: rotate(360deg); } }
 
@@ -433,6 +440,7 @@ em { font-family: var(--font-italic); font-style: italic; color: var(--terracott
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh; /* iOS: exclude the Safari toolbar so the hero doesn't overflow */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1290,8 +1298,12 @@ textarea { resize: vertical; min-height: 100px; }
   margin-bottom: 16px;
 }
 .logo-img--footer {
-  height: 200px;
+  height: 88px;
   filter: brightness(0) invert(1);
+}
+.logo-text--footer {
+  font-size: 2rem;
+  color: #fff;
 }
 .footer-tagline {
   font-size: 0.88rem;
@@ -1359,10 +1371,11 @@ textarea { resize: vertical; min-height: 100px; }
 /* 900px – tablets */
 @media (max-width: 900px) {
   /* Nav */
-  .nav { padding: 20px 24px; }
-  .nav.scrolled { padding: 14px 24px; }
+  .nav { height: 76px; padding: 0 24px; }
+  .nav.scrolled { height: 64px; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .logo-img { height: 52px; }
 
   /* Mobile menu scroll safety */
   .mobile-menu { overflow-y: auto; }
@@ -1438,8 +1451,8 @@ textarea { resize: vertical; min-height: 100px; }
   .dropdown-menu { display: none !important; }
 
   /* Nav */
-  .nav { padding: 18px 20px; }
-  .nav.scrolled { padding: 12px 20px; }
+  .nav { height: 70px; padding: 0 20px; }
+  .nav.scrolled { height: 60px; }
 
   /* Hero */
   .hero { padding: 100px 20px 60px; text-align: center; }
@@ -1506,9 +1519,9 @@ textarea { resize: vertical; min-height: 100px; }
 /* 480px – small phones */
 @media (max-width: 480px) {
   /* Nav */
-  .nav { padding: 16px 16px; }
-  .nav.scrolled { padding: 12px 16px; }
-  .nav-logo .logo-img { height: 140px; }
+  .nav { height: 64px; padding: 0 16px; }
+  .nav.scrolled { height: 56px; }
+  .nav-logo .logo-img { height: 46px; }
 
   /* Hero */
   .hero { padding: 88px 16px 52px; }
@@ -2004,4 +2017,68 @@ textarea { resize: vertical; min-height: 100px; }
   .svc-cta-strip { padding-left: 16px; padding-right: 16px; }
   .svc-info-card { padding: 20px 16px; }
   .svc-book-btn .btn-primary { padding: 13px 20px; font-size: 0.875rem; }
+}
+
+/* ── TidyCal Booking Modal ────────────────────────────────── */
+.booking-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.booking-modal.open { display: flex; }
+.booking-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 31, 23, 0.55);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  animation: bookingFade 0.3s ease;
+}
+.booking-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  height: min(86vh, 820px);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(44, 31, 23, 0.35);
+  animation: bookingPop 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.booking-frame-wrap,
+.booking-frame-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.booking-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.booking-close:hover { background: #fff; transform: scale(1.08); }
+@keyframes bookingFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes bookingPop {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+@media (max-width: 600px) {
+  .booking-modal { padding: 0; }
+  .booking-dialog { height: 100dvh; max-width: 100%; border-radius: 0; }
 }

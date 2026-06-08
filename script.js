@@ -375,4 +375,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(s => sectionObserver.observe(s));
 
+  // ── TidyCal Booking Popup ──────────────────────────────────
+  // 👇 PASTE YOUR TIDYCAL LINK HERE (e.g. https://tidycal.com/yourname/30-minute-consultation)
+  const TIDYCAL_URL = 'https://tidycal.com/YOUR-USERNAME';
+
+  (function initBookingPopup() {
+    // Stay dormant until a real link is set — booking buttons keep their scroll behaviour.
+    if (!TIDYCAL_URL || TIDYCAL_URL.includes('YOUR-USERNAME')) return;
+
+    // Build the modal once and reuse it.
+    const overlay = document.createElement('div');
+    overlay.className = 'booking-modal';
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.innerHTML = `
+      <div class="booking-backdrop" data-book-close></div>
+      <div class="booking-dialog" role="dialog" aria-modal="true" aria-label="Book a session">
+        <button class="booking-close" data-book-close aria-label="Close booking">&times;</button>
+        <div class="booking-frame-wrap"></div>
+      </div>`;
+    document.body.appendChild(overlay);
+    const frameWrap = overlay.querySelector('.booking-frame-wrap');
+
+    const openModal = () => {
+      // Lazy-load the calendar the first time it's opened.
+      if (!frameWrap.querySelector('iframe')) {
+        const iframe = document.createElement('iframe');
+        iframe.src = TIDYCAL_URL;
+        iframe.loading = 'lazy';
+        iframe.title = 'Book a session with Rebecca Islam';
+        frameWrap.appendChild(iframe);
+      }
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeModal = () => {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    // Intercept every booking CTA (all link to #contact). Capture phase so this
+    // runs before the smooth-scroll handler on the same anchors.
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[href$="#contact"]');
+      if (!link) return;
+      e.preventDefault();
+      e.stopPropagation();
+      // Close the mobile menu if it happens to be open.
+      hamburger?.classList.remove('open');
+      mobileMenu?.classList.remove('open');
+      openModal();
+    }, true);
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target.hasAttribute('data-book-close')) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+    });
+  })();
+
 });
