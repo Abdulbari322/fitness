@@ -1,0 +1,10 @@
+{
+  "name": "rebecca-islam-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rebecca Islam — trauma & relationship coaching website",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

@@ -15,7 +15,10 @@ const MIME = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
+  // Strip query string / hash and decode (e.g. "/style.css?v=2" -> "/style.css")
+  let urlPath = decodeURIComponent(req.url.split('?')[0].split('#')[0]);
+  if (urlPath === '/') urlPath = '/index.html';
+  let filePath = path.join(__dirname, urlPath);
   const ext = path.extname(filePath);
   const contentType = MIME[ext] || 'text/plain';
 
