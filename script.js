@@ -313,38 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Contact Form ───────────────────────────────────────────
-  const form = document.getElementById('contactForm');
-  const formSuccess = document.getElementById('formSuccess');
-
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const fname = form.fname.value.trim();
-    const email = form.email.value.trim();
-
-    if (!fname || !email) {
-      const missing = !fname ? form.fname : form.email;
-      gsap.fromTo(missing,
-        { x: -6 },
-        { x: 0, duration: 0.4, ease: 'elastic.out(1, 0.3)', repeat: 2, yoyo: true }
-      );
-      missing.focus();
-      return;
-    }
-
-    // Simulate submission
-    const btn = form.querySelector('.btn-primary');
-    btn.textContent = 'Sending…';
-    btn.style.pointerEvents = 'none';
-
-    setTimeout(() => {
-      btn.style.display = 'none';
-      formSuccess.classList.add('visible');
-      gsap.fromTo(formSuccess, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' });
-      form.reset();
-    }, 1200);
-  });
-
+  // ── Contact: booking handled by the inline TidyCal embed ───
   // ── Smooth anchor scrolling with offset ───────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

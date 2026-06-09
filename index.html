@@ -603,7 +603,7 @@
       <div class="contact-info">
         <div class="section-label reveal-left">Get in Touch</div>
         <h2 class="reveal-left">Let's begin<br/><em>your story.</em></h2>
-        <p class="reveal-left">Whether you have questions or you're ready to book — reach out. Every message is read personally, and I respond within 48 hours.</p>
+        <p class="reveal-left">Whether you have questions or you're ready to begin, choose a time that suits you below. Every first consultation is a free, no-pressure conversation.</p>
 
         <div class="contact-details reveal-left">
           <div class="contact-detail">
@@ -642,51 +642,12 @@
       </div>
 
       <div class="contact-form-wrap reveal-right">
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Your last name" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="service">I'm interested in</label>
-            <div class="select-wrap">
-              <select id="service" name="service">
-                <option value="">Select a service…</option>
-                <option>Trauma Recovery</option>
-                <option>Grief &amp; Loss Counselling</option>
-                <option>Breakup &amp; Divorce Recovery</option>
-                <option>Individual Therapy</option>
-                <option>Healing Circles (Group)</option>
-                <option>Online Counselling</option>
-                <option>Free Consultation</option>
-              </select>
-              <span class="select-arrow">↓</span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message <span class="optional">(optional)</span></label>
-            <textarea id="message" name="message" rows="4" placeholder="Share as little or as much as you'd like…"></textarea>
-          </div>
-          <div class="form-privacy">
-            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1L2 4V8C2 11.31 4.55 14.41 8 15C11.45 14.41 14 11.31 14 8V4L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-            <span>Your privacy is sacred. All information is strictly confidential.</span>
-          </div>
-          <button type="submit" class="btn-primary btn-full">Send Message →</button>
-          <div class="form-success" id="formSuccess">
-            <span>✦</span>
-            <p>Thank you for reaching out. I'll be in touch within 24 hours.</p>
-          </div>
-        </form>
+        <!-- TidyCal booking calendar -->
+        <div class="tidycal-embed" data-path="rebeca-islam/fdc" style="min-height:520px"></div>
+        <div class="form-privacy">
+          <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M8 1L2 4V8C2 11.31 4.55 14.41 8 15C11.45 14.41 14 11.31 14 8V4L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          <span>Your privacy is sacred. All information is strictly confidential.</span>
+        </div>
       </div>
     </div>
   </section>
@@ -752,5 +713,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
+  <!-- TidyCal embed -->
+  <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
 </body>
 </html>
