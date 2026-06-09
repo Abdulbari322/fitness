@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>We'll be back soon — Rebecca Islam</title>
+  <meta name="description" content="Our site is currently down for scheduled maintenance. We'll be back shortly." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ivory: #f6f1e9;
+      --ivory-deep: #ede5d4;
+      --terracotta: #b5654a;
+      --sage: #4a6741;
+      --ink: #2c1f17;
+      --ink-60: rgba(44, 31, 23, 0.6);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--ivory);
+      background-image: radial-gradient(circle at 50% 0%, var(--ivory-deep), var(--ivory) 60%);
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 540px; }
+    .mark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      color: var(--terracotta);
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    h1 em { font-style: italic; color: var(--terracotta); }
+    p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--ink-60);
+      max-width: 42ch;
+      margin: 0 auto 0.75rem;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--sage);
+      opacity: 0.5;
+      margin: 2.25rem auto;
+    }
+    .contact { font-size: 0.95rem; color: var(--ink-60); }
+    .contact a { color: var(--sage); text-decoration: none; border-bottom: 1px solid rgba(74,103,65,0.3); }
+    .contact a:hover { color: var(--terracotta); border-color: var(--terracotta); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="mark">Rebecca Islam</div>
+    <h1>We're taking a <em>short pause</em></h1>
+    <p>Our site is briefly down for maintenance while we make a few improvements. Thank you for your patience — we'll be back very soon.</p>
+    <div class="divider"></div>
+    <p class="contact">Need to reach us in the meantime? Email <a href="mailto:abdulatbari@gmail.com">abdulatbari@gmail.com</a></p>
+  </main>
+</body>
+</html>
