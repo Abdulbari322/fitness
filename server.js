@@ -45,5 +45,5 @@ server.on('error', (err) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Rebecca Islam site running at http://localhost:${PORT}`);
+  console.log(`Rebeca Islam site running at http://localhost:${PORT}`);
 });

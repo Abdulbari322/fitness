@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const iframe = document.createElement('iframe');
         iframe.src = TIDYCAL_URL;
         iframe.loading = 'lazy';
-        iframe.title = 'Book a session with Rebecca Islam';
+        iframe.title = 'Book a session with Rebeca Islam';
         frameWrap.appendChild(iframe);
       }
       overlay.classList.add('open');
