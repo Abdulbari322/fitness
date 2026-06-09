@@ -1,9 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": ".",
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/((?!images/).*)", "destination": "/maintenance.html" }
+  "routes": [
+    { "src": "/images/(.*)", "dest": "/images/$1" },
+    { "src": "/(.*)", "dest": "/maintenance.html" }
   ]
 }
