@@ -1,4 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/services/online-counselling.html",
+      "destination": "/services/online-therapy.html",
+      "permanent": true
+    },
+    {
+      "source": "/services/online-counselling",
+      "destination": "/services/online-therapy.html",
+      "permanent": true
+    }
+  ]
 }
