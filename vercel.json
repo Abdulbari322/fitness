@@ -1,8 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": ".",
-  "routes": [
-    { "src": "/images/(.*)", "dest": "/images/$1" },
-    { "src": "/(.*)", "dest": "/maintenance.html" }
-  ]
+  "outputDirectory": "."
 }
