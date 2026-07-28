@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdulbari322.github.io/fitness/sitemap.xml
