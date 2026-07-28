@@ -240,55 +240,57 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.getElementById('tnavPrev');
   const nextBtn = document.getElementById('tnavNext');
 
-  let currentSlide = 0;
-  let slidesPerView = window.innerWidth < 700 ? 1 : (window.innerWidth < 1000 ? 2 : 3);
-  const totalSlides = cards.length;
-  const maxSlide = totalSlides - slidesPerView;
+  if (track && dotsContainer && cards.length > 0) {
+    let currentSlide = 0;
+    let slidesPerView = window.innerWidth < 700 ? 1 : (window.innerWidth < 1000 ? 2 : 3);
+    const totalSlides = cards.length;
+    const maxSlide = totalSlides - slidesPerView;
 
-  // Build dots
-  for (let i = 0; i <= maxSlide; i++) {
-    const dot = document.createElement('button');
-    dot.className = 'tnav-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', `Slide ${i + 1}`);
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsContainer.appendChild(dot);
+    // Build dots
+    for (let i = 0; i <= maxSlide; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'tnav-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Slide ${i + 1}`);
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    const goToSlide = (index) => {
+      currentSlide = Math.max(0, Math.min(index, maxSlide));
+      const cardWidth = cards[0].offsetWidth + 24;
+      gsap.to(track, {
+        x: -(currentSlide * cardWidth),
+        duration: 0.6,
+        ease: 'power3.inOut',
+      });
+      document.querySelectorAll('.tnav-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    };
+
+    prevBtn?.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn?.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+    // Auto-advance
+    let autoSlide = setInterval(() => goToSlide(currentSlide + 1 > maxSlide ? 0 : currentSlide + 1), 5000);
+    track.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    track.addEventListener('mouseleave', () => {
+      autoSlide = setInterval(() => goToSlide(currentSlide + 1 > maxSlide ? 0 : currentSlide + 1), 5000);
+    });
+
+    // Touch swipe
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
+    track.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) goToSlide(diff > 0 ? currentSlide + 1 : currentSlide - 1);
+    });
+
+    window.addEventListener('resize', () => {
+      slidesPerView = window.innerWidth < 700 ? 1 : (window.innerWidth < 1000 ? 2 : 3);
+      goToSlide(0);
+    });
   }
-
-  const goToSlide = (index) => {
-    currentSlide = Math.max(0, Math.min(index, maxSlide));
-    const cardWidth = cards[0].offsetWidth + 24;
-    gsap.to(track, {
-      x: -(currentSlide * cardWidth),
-      duration: 0.6,
-      ease: 'power3.inOut',
-    });
-    document.querySelectorAll('.tnav-dot').forEach((dot, i) => {
-      dot.classList.toggle('active', i === currentSlide);
-    });
-  };
-
-  prevBtn?.addEventListener('click', () => goToSlide(currentSlide - 1));
-  nextBtn?.addEventListener('click', () => goToSlide(currentSlide + 1));
-
-  // Auto-advance
-  let autoSlide = setInterval(() => goToSlide(currentSlide + 1 > maxSlide ? 0 : currentSlide + 1), 5000);
-  track.addEventListener('mouseenter', () => clearInterval(autoSlide));
-  track.addEventListener('mouseleave', () => {
-    autoSlide = setInterval(() => goToSlide(currentSlide + 1 > maxSlide ? 0 : currentSlide + 1), 5000);
-  });
-
-  // Touch swipe
-  let touchStartX = 0;
-  track.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; });
-  track.addEventListener('touchend', (e) => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) goToSlide(diff > 0 ? currentSlide + 1 : currentSlide - 1);
-  });
-
-  window.addEventListener('resize', () => {
-    slidesPerView = window.innerWidth < 700 ? 1 : (window.innerWidth < 1000 ? 2 : 3);
-    goToSlide(0);
-  });
 
   // ── FAQ Accordion ──────────────────────────────────────────
   const faqItems = document.querySelectorAll('.faq-item');
